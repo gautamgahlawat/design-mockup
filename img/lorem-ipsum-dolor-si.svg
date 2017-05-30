@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="439" height="64" viewBox="0 0 439 64">
+    <text fill="#FFF" fill-rule="evenodd" font-family="WorkSans-Regular, Work Sans" font-size="16" letter-spacing=".686" opacity=".4" transform="translate(-8 -5)">
+        <tspan x="6.909" y="15">Lorem ipsum dolor sit amet, consectetur adipiscing </tspan> <tspan x="7.782" y="39">elit, sed do eiusmod tempor incididunt ut labore et </tspan> <tspan x="23.919" y="63">dolore magna aliqua. Ut enim ad minim veniam.</tspan>
+    </text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124" height="124" viewBox="0 0 124 124">
+    <defs>
+        <radialGradient id="c" cy="0%" r="100%" fx="50%" fy="0%">
+            <stop offset="0%" stop-color="#FFD843"/>
+            <stop offset="100%" stop-color="#F0B41C"/>
+        </radialGradient>
+        <ellipse id="b" cx="39" cy="39" rx="39" ry="39"/>
+        <filter id="a" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+            <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(23 13)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="url(#c)" xlink:href="#b"/>
+        </g>
+        <path stroke="#171717" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M49 52.27L55.637 60 75.37 43"/>
+    </g>
+</svg>
