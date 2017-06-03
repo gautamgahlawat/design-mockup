@@ -8,6 +8,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 /*@font-face {
@@ -21,7 +22,108 @@ body {
   height: 384px;
   background-color: #171717;
   position: relative;
+
+  prespective: 700px;
 }
+
+/*---------------------------Flickering light-------------------------------*/
+.Group-2-light {
+  width: 293.5px;
+  height: 333px;
+  object-fit: contain;
+  opacity: 0.7;
+  position: absolute;
+  top: 13px;
+  left: 109px;
+
+  animation: flicker 10s linear 3s 1;
+  animation-fill-mode: both;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0; visibility: hidden;
+  }
+  6% {
+    opacity: 1;
+  }
+  11% {
+    opacity: .4;
+  }
+  11.25% {
+    opacity: .6;
+  }
+  11.5% {
+    opacity: .4;
+  }
+  18% {
+    opacity: 1;
+  }
+  18.5% {
+    opacity: .9;
+  }
+  22% {
+    opacity: 1;
+  }
+  38.5% {
+    opacity: 1;
+  }
+  39% {
+    opacity: .8;
+  }
+  42% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.5% {
+    opacity: .4;
+  }
+  62% {
+    opacity: 0.2;
+  }
+  63% {
+    opacity: .2;
+  }
+  63.25% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  73% {
+    opacity: 1;
+  }
+  75% {
+    opacity: .8;
+  }
+  79% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1 visibility: visible;
+  }
+}
+/*------------------------------------------------*/
+
+/*------------------------------------PVR logo up--------------------------*/
+img.pvr-Group-2-pvrlogo {
+  width: 159px;
+  height: 74.5px;
+  object-fit: contain;
+  position: absolute;
+  top: 127px;
+  left: 68px;
+  /*box-shadow: 0 6px 10.5px 0 #000000;*/
+  animation: pvr-up 500ms 2.5s forwards;
+}
+
+@keyframes pvr-up{
+  0%{transform: translate(0,0);}
+  100%{transform: translate(105px, -80px) scaleY(0.65) scaleX(0.65);}
+}
+/*------------------------------------------*/
 
 img.Star-2 {
   width: 233.5px;
@@ -32,18 +134,11 @@ img.Star-2 {
   position: absolute;
   left: 31.5px;
   top: 77px;
+
+  animation: disappear-star-gradient 100ms 2.5s forwards;
 }
 
-img.pvr-Group-2 {
-  width: 159px;
-  height: 74.5px;
-  object-fit: contain;
-  position: absolute;
-  top: 127px;
-  left: 68px;
-}
-
-img.Rectangle-4 {
+img.Rectangle-4-gradiant {
   width: 252px;
   height: 213px;
   object-fit: contain;
@@ -51,7 +146,62 @@ img.Rectangle-4 {
   position: absolute;
   top:105px;
   left: 21.5px;
+
+  animation: disappear-star-gradient 400ms 2.5s forwards;
 }
+
+@keyframes disappear-star-gradient{
+  0%{opacity: 1;}
+  100%{opacity: 0; visibility: hidden;}
+}
+
+/*----------------------------------Registration Sucessfull acknowledgement-----------------------------*/
+p.Please-pay-INR-300-a {
+  width: 155px;
+  height: 33px;
+  opacity: 0.6;
+  font-family: 'Work Sans';
+  font-size: 7px;
+  line-height: 1.57;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  position: relative;
+  top: 175px;
+  left: 178.5px;
+
+  animation: move-up 0.5s ease-in-out 1 3.5s forwards;
+  animation-fill-mode: both;
+}
+
+p.Your-registeration-w {
+  width: 143.5px;
+  height: 30px;
+  background-image: linear-gradient(to bottom, #ffffff, #ebebeb 98%);
+  font-family: 'Work Sans';
+  font-size: 10.5px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0.5px;
+  text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  position: relative;
+  top: 142.5px;
+  left: 184.5px;
+
+  animation: move-up 0.5s ease-in-out 1 3.5s forwards;
+  animation-fill-mode: both;
+}
+
+@keyframes move-up{
+  from {top:170px; opacity: 0; visibility: hidden;}
+  to {top:145px; opacity: 1; visibility: visible;}
+}
+/*------------------------------------------------------------*/
 
 p.Lorem-ipsum-dolor-si {
   width: 227.5px;
@@ -69,22 +219,107 @@ p.Lorem-ipsum-dolor-si {
   top: 228.5px;
   left: 33.5px;
 
+  animation: disappear-star-gradient 200ms 2.5s forwards;
+}
+/*-----------------------------------Card holder's card appears---------------------------------*/
+img.Group-4-card {
+  width: 175px;
+  height: auto;
+  object-fit: contain;
+  /*box-shadow: 0 6px 10.5px 0 #000000;*/
+  position: absolute;
+  top: 236.5px;
+  left:174px;
+  z-index: 200;
+
+  animation: card-appears 0.5s ease-out 1 3.4s forwards;
+  animation-fill-mode: both;
 }
 
-.Rectangle-76 {
+@keyframes card-appears{
+  0%{opacity: 0; visibility: hidden;}
+  /*95%{opacity: 0.5;}
+  99%{opacity: 0.8;}*/
+  100%{opacity: 1; visibility: visible;}
+}
+/*----------------------*/
+
+/*-------------------------------------------Main Form wrapper--------------------------------------*/
+div.Rectangle-76-mainform.front {
   width: 183px;
   height: 291px;
   border-radius: 4px;
   background-color: #ffffff;
-
   /*margin: 34.5px 34.5px 58.5px 294.5px;*/
   padding: 0;
-  position: relative;
+  /*position: absolute;*/
   top: 34.5px;
   right: 34.5px;
   bottom: 58.5px;
   left: 294.5px;
+
+  transform-style: preserve-3d;
+  transform-origin: center;
+  -webkit-transform-origin: center;
+/*  transition: all 0.5s linear 0s;
+  -webkit-transition: all 0.5s linear 0s;*/
+
+  /*backface-visibility: hidden;*/
+  /*animation: card 0.8s ease-out 1  2s forwards;
+  animation-fill-mode: both;*/
 }
+
+@keyframes card{
+  0%{transform: rotateX(0deg);}
+
+  100%{transform: translateX(-124.4px) translateY(107px) rotateZ(90deg) rotateX(-360deg) rotateY(120deg) scaleY(0.52) scaleX(1); /*opacity: 0; /*visibility: hidden;*/}
+}
+/*----------------------------------------------------------*/
+
+/*------------------------Form flip front and back-------------------------------*/
+div.form-container {
+  width:100%;
+  height: 100%;
+
+  position: absolute;
+  width: 183px;
+  height: 291px;
+  border-radius: 4px;
+  top: 34.5px;
+  right: 34.5px;
+  bottom: 58.5px;
+  left: 294.5px;
+  transform-style: preserve-3d;
+
+  animation: card 0.8s ease-out 1  2.5s forwards;
+  animation-fill-mode: both;
+}
+
+.back, .front {
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 100;
+  transform: rotateY(0deg);
+}
+
+.back {
+  width: 183px;
+  height: 291px;
+  border-radius: 4px;
+  color: grey;
+  text-align: center;
+  background-color: white;
+  padding: 0;
+  position: absolute;
+  top: 1px;
+  right: 34.5px;
+  bottom: 58.5px;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
 
 div.Rectangle {
   width: 183px;
@@ -92,7 +327,6 @@ div.Rectangle {
   border-radius: 4px 4px 0 0;
   background-image: radial-gradient(circle at 50% 0, #ffd743, #f0b51e);
   position: relative;
-  /*top: -5px;*/
 }
 
 p.REGISTER-HERE {
@@ -104,14 +338,8 @@ p.REGISTER-HERE {
   letter-spacing: 0.5px;
   text-align: center;
   color: #171717;
-  /*padding: 20px;*/
   margin: 0;
   position: absolute;
-  /*background-color: lightgreen;*/
- /* top: 10px;
-  right: 49px;
-  bottom: 10px;
-  left: 49px;*/
 
   margin: 10px 49px;
 }
@@ -140,8 +368,6 @@ input:focus {
   border: none;
   outline: none;
   border-bottom: 1.5px solid #f4f4f4;
-  /*border-radius: 1px;*/
-
 }
 
 p.mandatory-fields {
@@ -154,11 +380,35 @@ p.mandatory-fields {
   margin: 10px auto;
 }
 
-img.Group-3 {
+/*------------------------------Tick submit button--------------------*/
+img.Group-3-tick {
   width: 50px;
   height: auto;
   /*object-fit: contain;*/
   position: absolute;
-  left: 68px;
+  top: 310.5px;
+  left: 366.5px;
   bottom: -32px;
+
+/*  transition: transform 300ms linear,
+              opacity 150ms linear 250ms;*/
+
+  animation: tick-down-up 2.8s ease-in-out;
+  /*animation: tick-down 1s ease-in-out 1s;*/
+  animation-fill-mode: both;
 }
+
+/*img.Group-3-tick.clicked {
+  transform: translate(0px, 100px);
+  opacity: 0;
+}*/
+
+@keyframes tick-down-up {
+    0% {transform: translateY(500px);}
+    40%{transform: translateY(0);}
+    65%{transform: translateY(0);}
+    100%{transform: translateY(500px);}
+
+  }
+
+/*-----------------------------------------*/

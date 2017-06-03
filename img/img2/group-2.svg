@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="587" height="678" viewBox="0 0 587 678">
+    <defs>
+        <radialGradient id="a" cx="49.897%" cy="17.926%" r="77.42%" fx="49.897%" fy="17.926%">
+            <stop offset="0%" stop-color="#FFEB68" stop-opacity=".822"/>
+            <stop offset="72.068%" stop-color="#FFE67A" stop-opacity=".285"/>
+            <stop offset="100%" stop-color="#FFE06A" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="b" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="16.222"/>
+        </filter>
+        <radialGradient id="c" cy="0%" r="50.857%" fx="50%" fy="0%">
+            <stop offset="0%" stop-color="#FFEB68"/>
+            <stop offset="43.601%" stop-color="#FFE67A" stop-opacity=".285"/>
+            <stop offset="100%" stop-color="#FFE06A" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="d" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+        </filter>
+        <linearGradient id="e" x1="50%" x2="50%" y1="0%" y2="88.479%">
+            <stop offset="0%" stop-color="#FFE15E"/>
+            <stop offset="43.272%" stop-color="#F3D659" stop-opacity=".23"/>
+            <stop offset="100%" stop-color="#F2D559" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="f" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="9"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" opacity=".922" transform="translate(0 26)">
+        <path fill="url(#a)" d="M586.973 666C521.637 298.178 390.24 0 293.487 0 196.735 0 65.337 298.178 0 666h586.973z" filter="url(#b)" opacity=".09" transform="matrix(-1 0 0 1 586.973 0)"/>
+        <path fill="url(#c)" d="M551.025 585C493.662 262.466 378.3 1 293.355 1 208.411 1 93.05 262.466 35.686 585h515.339z" filter="url(#d)" opacity=".12" transform="matrix(-1 0 0 1 586.71 0)"/>
+        <ellipse cx="291.007" cy="87.999" fill="url(#e)" filter="url(#f)" opacity=".19" rx="32.876" ry="81.001"/>
+    </g>
+</svg>

@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFFFFF;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/*@font-face {
+    font-family: "WorkSans";
+    src: url(https://fonts.googleapis.com/css?family=Work+Sans);
+}*/
+
+.Privilege-kiosk-1 {
+    /*margin: 0 auto;*/
+  width: 512px;
+  height: 384px;
+  background-color: #171717;
+  position: relative;
+}
+
+.Group-2-light {
+  width: 293.5px;
+  height: 333px;
+  object-fit: contain;
+  opacity: 0.7;
+  position: absolute;
+  top: 13px;
+  left: 109px;
+}
+
+.Group-4-card {
+  width: 175px;
+  height: auto;
+  object-fit: contain;
+  /*box-shadow: 0 6px 10.5px 0 #000000;*/
+  position: relative;
+  top: 236.5px;
+  /*left:178.5px;*/
+}
+
+.Please-pay-INR-300-a {
+  width: 155px;
+  height: 33px;
+  opacity: 0.6;
+  font-family: 'Work Sans';
+  font-size: 7px;
+  line-height: 1.57;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  position: absolute;
+  top: 175px;
+  left: 178.5px;
+}
+
+.Your-registeration-w {
+  width: 143.5px;
+  height: 30px;
+  background-image: linear-gradient(to bottom, #ffffff, #ebebeb 98%);
+  font-family: 'Work Sans';
+  font-size: 10.5px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0.5px;
+  text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  position: absolute;
+  top: 142.5px;
+  left: 184.5px;
+}
+
+.Your-registeration-w .text-style-1 {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to bottom, #ffffff, #ebebeb 98%);
+}
+
+.Group-3-Copy-2 {
+  width: 118px;
+  height: 54.5px;
+  object-fit: contain;
+  position: absolute;
+  top: 60.5px;
+  left: 196px;
+}
